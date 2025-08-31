@@ -1,5 +1,5 @@
 string1="angel"
-string2="anle"
+string2="angle"
 
 if sorted(string1)==sorted(string2):
     print("They are anagrams")
