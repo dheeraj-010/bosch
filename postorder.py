@@ -6,11 +6,11 @@ class Node:
  
 def postorder(root):
     if root:
-        postorder(root.left)        # 1. Traverse left
-        postorder(root.right)       # 2. Traverse right
-        print(root.key, end=" ")    # 3. Visit root
+        postorder(root.left)       
+        postorder(root.right)      
+        print(root.key, end=" ")   
  
-# Example Tree
+
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
