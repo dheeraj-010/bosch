@@ -3,11 +3,11 @@ class Node:
         self.key = key
         self.left = None
         self.right = None
-def preorder(root):
+def PreOrder(root):
     if root:
         print(root.key, end=" ")  
-        preorder(root.left)      
-        preorder(root.right)      
+        PreOrder(root.left)      
+        PreOrder(root.right)      
 
 root = Node(1)
 root.left = Node(2)
@@ -16,4 +16,4 @@ root.left.left = Node(4)
 root.left.right = Node(5)
 root.right.left = Node(6)
 print("Preorder Traversal:")
-preorder(root)
+PreOrder(root)
